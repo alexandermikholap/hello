@@ -1,0 +1,19 @@
+workflows:
+  android:
+    working_directory: .
+    scripts:
+      - name: Add android
+        working_directory: .
+        script: cordova platform add android
+      - name: Build android
+        working_directory: .
+        script: cordova build android
+  ios:
+    working_directory: .
+    scripts:
+    - name: Add iOS
+      working_directory: .
+      script: cordova platform add ios
+    - name: Build iOS
+      working_directory: .
+      script: cordova build ios
