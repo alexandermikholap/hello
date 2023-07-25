@@ -8,10 +8,10 @@ workflows:
       - name: Build android
         working_directory: .
         script: cordova build android
-      publishing:
-        email:
-          recipients:
-            - alexander.miholap@celadonsoft.com 
+    publishing:
+      email:
+        recipients:
+          - alexander.miholap@celadonsoft.com 
   ios:
     working_directory: .
     scripts:
